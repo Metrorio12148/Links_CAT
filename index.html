@@ -304,11 +304,39 @@
       <div class="week-indicator" id="weekIndicator">Semana: Carregando...</div>
       
       <div class="buttons-container" id="links">
-        <!-- Botões mantidos iguais -->
         <a href="https://metroriorj-my.sharepoint.com/personal/ejorge_metrorio_com_br/_layouts/15/onedrive.aspx?id=%2Fpersonal%2Fejorge%5Fmetrorio%5Fcom%5Fbr%2FDocuments&view=0" target="_blank" class="btn">
           <i class="fas fa-moon"></i> ATIVIDADES NOTURNAS
         </a>
-        <!-- ... outros botões mantidos ... -->
+        <a href="http://10.252.40.245" target="_blank" class="btn">
+          <i class="fas fa-desktop"></i> MONITORAMENTO BIL
+        </a>
+        <a href="http://10.252.40.238" target="_blank" class="btn">
+          <i class="fas fa-bolt"></i> NOBREAK
+        </a>
+        <a href="https://metroriorj-my.sharepoint.com/:f:/g/personal/wesleys_metrorio_com_br/EuhxZl6-OHxLjNvkifnZ5_wBZVPTfGJIDaQd1rG_M3QlmQ?e=2VXblr" target="_blank" class="btn">
+          <i class="fas fa-file-alt"></i> INSTRUÇÕES DE TRABALHO
+        </a>
+        <a href="https://metroriorj-my.sharepoint.com/:f:/g/personal/avasconcelos_metrorio_com_br/EmtWLkOxhQlImhATj-XFy1MBAsoVG4VJHHICLOXTZ6Pf-A?e=cLo9F0" target="_blank" class="btn">
+          <i class="fas fa-clipboard-list"></i> RELATÓRIO CORRETIVA
+        </a>
+        <a href="https://id.impulseup.com/auth/realms/impulseup/protocol/openid-connect/auth?response_type=code&amp;client_id=impulseup-web&amp;state=hjfCNV04OGsUMizt9fP4SNip9wUvoO3rLvOfbq05tJHHf%3B%2Fdashboard&amp;redirect_uri=https%3A%2F%2Fapp.impulseup.com%2Fapi%2Fpublic%2Fdispatcher%3ForiginalUri%3Dhttps%253A%252F%252Fmetrorio.impulseup.com%252Fauth&amp;scope=openid%20profile%20email%20offline_access&amp;code_challenge=aphZA-z1pivZXLOT4D8i0yQMUh6aefWBRdIBLdUJcoY&amp;code_challenge_method=S256&amp;nonce=hjfCNV04OGsUMizt9fP4SNip9wUvoO3rLvOfbq05tJHHf&amp;ui_locales=pt-BR" target="_blank" class="btn">
+          <i class="fas fa-comment-alt"></i> FEEDBACK
+        </a>
+        <a href="https://metroriorj.sharepoint.com/sites/Almoxarifado-Metr/Lists/Aplicativo%20de%20Entrega%20de%20Materiais/Allitemsg.aspx?sortField=%5Fx0049%5FD1&amp;isAscending=true&amp;viewid=07f4d397%2D144e%2D4a25%2D90aa%2D5a972743378c&amp;CT=1684618268911&amp;OR=OWA%2DNT&amp;CID=8d65c26a%2D783f%2D9ce4%2D0936%2D23ad7f902b64" target="_blank" class="btn">
+          <i class="fas fa-boxes"></i> ALMOXARIFADO
+        </a>
+        <a href="https://docs.google.com/forms/d/1atHmik5yp9t3BCSDyByIzVstIEIRHWDsg0hB3Z60PG4/edit?ts=666bb039" target="_blank" class="btn">
+          <i class="fas fa-file-signature"></i> FORMULÁRIO NOTAS
+        </a>
+        <a href="https://metrorio12148.github.io/ITENS_COM_FOTO/" target="_blank" class="btn">
+          <i class="fas fa-camera"></i> ITENS COM FOTO
+        </a>
+        <a href="https://metroriorj-my.sharepoint.com/:x:/g/personal/wesleys_metrorio_com_br/EXiXUHsQg2VCli90-PCucKIB2ADZj3p7jyyNN4jmkm-RTQ?e=K4lNWl" target="_blank" class="btn">
+          <i class="fas fa-search"></i> CONSULTA ITENS
+        </a>
+        <a href="https://metroriorj-my.sharepoint.com/:b:/g/personal/wesleys_metrorio_com_br/EbqKOJkbplhFp667KssS9H8BPGAvveUupEm9FOKEaK3q5g?e=5LVwQx" target="_blank" class="btn">
+          <i class="fas fa-map-marked-alt"></i> MAPEAMENTO SW
+        </a>
       </div>
     </div>
   </main>
@@ -342,7 +370,7 @@
         });
       });
 
-      // Novo código para calcular a semana
+      // Função para calcular a semana atual
       function getWeekNumber() {
         const today = new Date();
         const firstDayOfYear = new Date(today.getFullYear(), 0, 1);
@@ -350,6 +378,7 @@
         return Math.ceil((pastDaysOfYear + firstDayOfYear.getDay() + 1) / 7);
       }
 
+      // Atualizar o indicador de semana
       const weekIndicator = document.getElementById('weekIndicator');
       if (weekIndicator) {
         const weekNumber = getWeekNumber();
