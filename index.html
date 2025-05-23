@@ -268,25 +268,24 @@
         grid-template-columns: 1fr;
       }
       .watermark {
-  position: fixed;
-  bottom: 20px;
-  right: 20px;
-  opacity: 0.1; /* Ajuste a opacidade aqui */
-  z-index: -1; /* Mantém atrás do conteúdo */
-  pointer-events: none; /* Permite cliques através da marca */
-  font-size: 120px;
-  font-weight: 900;
-  color: var(--accent-color); /* Usa a cor azul do tema */
-  transform: rotate(-15deg); /* Rotação opcional */
-  white-space: nowrap;
-  text-shadow: 2px 2px 4px rgba(0,0,0,0.3);
-  user-select: none; /* Impede seleção de texto */
+    position: fixed;
+    bottom: 15px;
+    left: 15px;
+    color: rgba(255, 255, 255, 0.5); /* Cor branca com 50% de opacidade */
+    font-size: 0.9rem;
+    z-index: 500;
+    opacity: 0.7; /* Opacidade geral */
+    font-family: 'Open Sans', sans-serif;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.3); /* Melhora a legibilidade */
+    pointer-events: none; /* Permite clicar através do elemento */
+    background: linear-gradient(45deg, rgba(26,42,108,0.2), rgba(38,116,174,0.2)); /* Gradiente que combina com o tema */
+    padding: 4px 8px;
+    border-radius: 3px;
 }
     }
   </style>
 </head>
 <body>
-  <div class="watermark">Desenvolvido por: Wesley Coutinho</div>
   <div class="intro">
     <img src="R.png" alt="Logo">
     <h2>CAT</h2>
@@ -402,5 +401,6 @@
       }
     });
   </script>
+  <div class="watermark">Dev: Wesley Coutinho</div>
 </body>
 </html>
