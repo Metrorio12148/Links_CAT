@@ -269,14 +269,14 @@
       }
       .watermark {
     position: fixed;
-    bottom: 15px;
-    left: 15px;
+    bottom: 10px;
+    left: 10px;
     color: rgba(255, 255, 255, 0.5); /* Cor branca com 50% de opacidade */
-    font-size: 0.9rem;
+    font-size: 0.7rem;
     z-index: 500;
-    opacity: 0.7; /* Opacidade geral */
+    opacity: 0.2; /* Opacidade geral */
     font-family: 'Open Sans', sans-serif;
-    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.3); /* Melhora a legibilidade */
+    text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.3); /* Melhora a legibilidade */
     pointer-events: none; /* Permite clicar através do elemento */
     background: linear-gradient(45deg, rgba(26,42,108,0.2), rgba(38,116,174,0.2)); /* Gradiente que combina com o tema */
     padding: 4px 8px;
@@ -357,7 +357,9 @@
       </div>
     </div>
   </main>
-  <div class="watermark">Dev: Wesley Coutinho</div>
+  <div class="watermark">
+    <i class="fas fa-code"></i> Dev: Wesley Coutinho
+</div>
   <footer class="footer">
     <p>LOGIN E SENHA ZABBIX: cim_oper</p>
   </footer>
