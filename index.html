@@ -195,7 +195,6 @@
       border-radius: 3px;
     }
 
-    /* Novo estilo para o indicador de semana */
     .week-indicator {
       font-size: 1.2rem;
       color: var(--accent-color);
@@ -268,10 +267,26 @@
       .buttons-container {
         grid-template-columns: 1fr;
       }
+      .watermark {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  opacity: 0.1; /* Ajuste a opacidade aqui */
+  z-index: -1; /* Mantém atrás do conteúdo */
+  pointer-events: none; /* Permite cliques através da marca */
+  font-size: 120px;
+  font-weight: 900;
+  color: var(--accent-color); /* Usa a cor azul do tema */
+  transform: rotate(-15deg); /* Rotação opcional */
+  white-space: nowrap;
+  text-shadow: 2px 2px 4px rgba(0,0,0,0.3);
+  user-select: none; /* Impede seleção de texto */
+}
     }
   </style>
 </head>
 <body>
+  <div class="watermark">Desenvolvido por: Wesley Coutinho</div>
   <div class="intro">
     <img src="R.png" alt="Logo">
     <h2>CAT</h2>
@@ -373,7 +388,6 @@
         });
       });
 
-      // Função para calcular a semana atual
       function getWeekNumber() {
         const today = new Date();
         const firstDayOfYear = new Date(today.getFullYear(), 0, 1);
@@ -381,7 +395,6 @@
         return Math.ceil((pastDaysOfYear + firstDayOfYear.getDay() + 1) / 7);
       }
 
-      // Atualizar o indicador de semana
       const weekIndicator = document.getElementById('weekIndicator');
       if (weekIndicator) {
         const weekNumber = getWeekNumber();
