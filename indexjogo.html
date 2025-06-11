@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Jogo educativo para praticar lógica de programação e debugging">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="styleIndex.css">
+    <title>CAT</title>
+</head>
+<body>
+    <header class="header">
+        <div class="logo-container">
+            <img src="metro-rio-logo-0.png" alt="CAT Logo" class="logo">
+            <a href="#" class="logo-text">Coordenação de Automação e Telecomunicações</a>
+        </div>
+        
+        <nav class="nav-links">
+            <a href="https://metrorio12148.github.io/Links_CAT/" class="nav-link">
+                <i class="fas fa-home"></i> Início
+            </a>
+            <a href="game.html" class="nav-link">
+                <i class="fas fa-gamepad"></i> Jogar
+            </a>
+            <a href="#sobre" class="nav-link">
+                <i class="fas fa-info-circle"></i> Sobre
+            </a>
+            <a href="#devs" class="nav-link">
+                <i class="fas fa-code"></i> Dev
+            </a>
+        </nav>
+    </header>
+
+    <main>
+        <section class="inicio" id="inicio">
+            <div class="inicio-content">
+                <h1>Bem-vindo ao jogo de perguntas CAT</h1>
+                <p>Um jogo onde seu objetivo é treinar e lembrar de fundamentos de telecom, ou bilhetagem do nosso dia a dia.</p>
+                <p>Pronto para testar seu Conhecimento?</p>
+            </div>
+        </section>
+
+        <section class="game-panel" id="jogar">
+            <div class="game-start">
+                <h2>Vamos Jogar?</h2>
+                <p>Clique no botão para acessar o ambiente do jogo!</p>
+                <a href="game.html">
+                <button class="game-button" id="gameButton" data-href="game.html">
+                    Questões Telecom!
+                    <i class="fas fa-arrow-right button-icon"></i>
+                </a>
+                <a href="game.html">
+                <button class="game-button" id="gameButton" data-href="game.html">
+                    Questões Bilhetagem!
+                    <i class="fas fa-arrow-right button-icon"></i>
+                </a>
+            </div>
+        </section>
+
+        <section class="content-panel" id="sobre">
+            <div class="about-section">
+                <h2>EduCAT</h2>
+                <h3>O que é esse projeto?</h3>
+                <div class="about-content">
+                    <p>O presente projeto tem como objetivo o desenvolvimento de um jogo educativo voltado à área de Automação e Telecomunicações, com foco na prática e no aperfeiçoamento dos conhecimentos básicos do setor. A proposta foi idealizada com o objetivo de contribuir com o processo de aprendizagem de forma interativa e dinâmica.</p>
+                    <p>O jogo será estruturado para que o usuário (Player) análise e relembre de fundamentos do dia a dia e responda as perguntas que forem inseridas durante o jogo.</p>
+                    <p>Além disso, o projeto busca:</p>
+                    <ul>
+                        <li>Incentivar o Aprendizado;</li>
+                        <li>Relembrar alguns fundamentos;</li>
+                        <li>Tornar o aprendizado mais envolvente por meio da gamificação;</li>
+                        <li>Servir como recurso complementar para Colaboradoees iniciantes .</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="devs-section" id="devs">
+                <h3>Desenvolvedores</h3>
+                <ul>
+                    <li><i class="fas fa-user"></i> Augusto Batista</li>
+                    <li><i class="fas fa-user"></i> Wesley Coutinho</li>
+                </ul>
+            </div>
+        </section>
+    </main>
+</body>
+</html>
